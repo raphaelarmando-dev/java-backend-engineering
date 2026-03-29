@@ -1,3 +1,9 @@
+# JetBrains / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
 ### IntelliJ IDEA ###
 out/
 !**/src/main/**/out/
