@@ -41,7 +41,7 @@ public class ConversaoTiposPrimitivos {
         System.out.println("Soma e " + soma);
         System.out.println("Media e " + soma / 2);
 
-        // Challange
+        // Challenge
 
         Scanner entrada = new Scanner(System.in);
 

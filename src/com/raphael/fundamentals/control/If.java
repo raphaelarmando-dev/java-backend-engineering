@@ -26,7 +26,7 @@ public class If {
 
         entrada.close();
 
-        // Challange
+        // Challenge
 
         double nota = 1.3;
         // nao usar ; em estruturas de controle (tem excecao)

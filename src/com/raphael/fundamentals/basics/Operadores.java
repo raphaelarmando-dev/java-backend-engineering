@@ -81,7 +81,7 @@ public class Operadores {
         System.out.println(!true);
         System.out.println(!false);
 
-        // Challange Logicos
+        // Challenge Logicos
 
         boolean trabalho1 = false;
         boolean trabalho2 = false;
