@@ -1,5 +1,5 @@
 package com.raphael.fundamentals.classe;
-
+@SuppressWarnings("all")
 public class Produto {
 
     // Atributos
@@ -10,6 +10,8 @@ public class Produto {
     double precoComDesconto() {
         return preco * (1 - desconto);
     }
+
+    Produto(){}
 
     Produto(String nomeInicial, double precoInicial, double descontoInicial) {
         nome = nomeInicial;
