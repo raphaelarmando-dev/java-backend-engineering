@@ -13,9 +13,10 @@ public class Produto {
 
     Produto(){}
 
-    Produto(String nomeInicial, double precoInicial, double descontoInicial) {
-        nome = nomeInicial;
-        preco = precoInicial;
-        desconto = descontoInicial;
+    // This
+    Produto(String nome, double preco, double desconto) {
+        this.nome = nome;
+        this.preco = preco;
+        this.desconto = desconto;
     }
 }
