@@ -5,7 +5,10 @@ public class Produto {
     // Atributos
     String nome;
     double preco;
-    double desconto;
+
+    // static
+    static double desconto = 0.25;
+
     // Metodo
     double precoComDesconto() {
         return preco * (1 - desconto);
