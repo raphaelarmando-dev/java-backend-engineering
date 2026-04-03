@@ -11,7 +11,7 @@ public class Produto {
 
     // Metodo
     double precoComDesconto() {
-        return preco * (1 - desconto);
+        return preco * (1 - desconto); // Desconto estático
     }
 
     Produto(){}
