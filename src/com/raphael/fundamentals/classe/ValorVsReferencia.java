@@ -7,5 +7,10 @@ public class ValorVsReferencia {
         a++;
         b--;
         System.out.println(a + " " + b); // Saída: 3.0 1.0
+
+        Data d1 = new Data(1, 1, 2026);
+        Data d2 = d1; // Apontam para o mesmo lugar
+        d2.dia = 31;
+        System.out.println(d1.obterDataFormatada());
     }
 }
