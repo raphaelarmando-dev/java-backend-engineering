@@ -5,6 +5,10 @@ public class Data {
     int mes;
     int ano;
 
+    Data() {
+        this(1, 1, 1970); // Chama o outro construtor usando 'this()'
+    }
+
     Data(int dia, int mes, int ano) {
         this.dia = dia;
         this.mes = mes;
