@@ -20,7 +20,7 @@ public class Data {
     }
 
     void imprimirDataFormatada() {
-        System.out.println(obterDataFormatada());
+        System.out.println(this.obterDataFormatada());
     }
 
 
