@@ -16,10 +16,11 @@ public class Data {
     }
 
     String obterDataFormatada() {
-        return String.format("%d/%d/%d", dia, mes, ano);
+        return String.format("%d/%d/%d", this.dia, this.mes, this.ano);
     }
 
     void imprimirDataFormatada() {
         System.out.println(obterDataFormatada());
     }
+
 }
