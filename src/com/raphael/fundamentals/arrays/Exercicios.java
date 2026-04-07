@@ -1,6 +1,7 @@
 package com.raphael.fundamentals.arrays;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 public class Exercicios {
     public static void main(String[] args) {
@@ -35,6 +36,8 @@ public class Exercicios {
             total += nota;
         }
         System.out.println("A média das notas é: " + (total / notas.length));
+
+        System.out.println("Notas inseridas: " + Arrays.toString(notas));
 
         entrada.close();
     }
