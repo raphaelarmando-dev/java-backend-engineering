@@ -2,7 +2,6 @@ package com.raphael.fundamentals.arrays;
 
 public class EstoqueTeste {
     public static void main(String[] args) {
-        // Alocação: O array 'cabine' é criado na Heap, mas as posições são null
         Produto[] cabine = new Produto[3];
 
         cabine[0] = new Produto("Teclado MonsGeek", 450.0);
