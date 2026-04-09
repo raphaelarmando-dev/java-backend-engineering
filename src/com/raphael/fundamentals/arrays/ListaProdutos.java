@@ -10,5 +10,13 @@ public class ListaProdutos {
         lista.add(new Produto("Microfone", 600.0));
 
         System.out.println("Total de elementos: " + lista.size());
+
+        lista.remove(0);
+
+        lista.removeIf(p -> p.getDetails().contains("Microfone"));
+
+        if (lista.isEmpty()) {
+            System.out.println("Lista limpa via predicados lambda.");
+        }
     }
 }
