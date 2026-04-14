@@ -7,6 +7,9 @@ public class UsuarioSistema implements Autenticavel {
     public UsuarioSistema(String login) {
         this.login = login;
     }
+    public String getLogin() {
+        return this.login;
+    }
 
     @Override
     public boolean validarAcesso(String senha) {
@@ -16,4 +19,6 @@ public class UsuarioSistema implements Autenticavel {
     public void acessar() {
         System.out.println("Usuário " + login + " logado no sistema.");
     }
+
+
 }
