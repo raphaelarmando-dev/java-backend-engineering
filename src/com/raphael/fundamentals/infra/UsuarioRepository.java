@@ -6,7 +6,7 @@ import java.util.List;
 public class UsuarioRepository {
     private List<UsuarioSistema> dbMock = new ArrayList<>();
 
-    public void salvar(UsuarioSistema u) {
+    public void inserir(UsuarioSistema u) {
         dbMock.add(u);
         System.out.println("Usuário " + u.getLogin() + " persistido no banco.");
     }
