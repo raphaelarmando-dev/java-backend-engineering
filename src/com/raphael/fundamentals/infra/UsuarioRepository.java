@@ -1,13 +1,14 @@
 package com.raphael.fundamentals.infra;
 import com.raphael.fundamentals.oo.UsuarioSistema;
-import java.util.ArrayList;
-import java.util.List;
+import com.raphael.fundamentals.oo.UsuarioDataHandler;
 
-public class UsuarioRepository {
-    private List<UsuarioSistema> dbMock = new ArrayList<>();
+public class UsuarioRepository extends RepositorioBase<UsuarioSistema> implements UsuarioDataHandler {
 
-    public void inserir(UsuarioSistema u) {
-        dbMock.add(u);
-        System.out.println("Usuário " + u.getLogin() + " persistido no banco.");
+    @Override
+    public void persistir(UsuarioSistema usuario) throws PersistenciaException {
+        if (usuario.getLogin() == null || usuario.getLogin().isEmpty()) {
+            throw new PersistenciaException("Login inválido para persistência.");
+        }
+        super.inserir(usuario);
     }
 }
