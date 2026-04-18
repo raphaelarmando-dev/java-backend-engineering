@@ -1,11 +1,10 @@
 package com.raphael.fundamentals.oo;
 
 public class AuthService {
-    public void realizarLogin(Autenticavel sujeito, String senha) {
-        if (sujeito.validarAcesso(senha)) {
-            System.out.println("AuthService: Acesso autorizado.");
-        } else {
-            System.out.println("AuthService: Acesso negado!");
+    public void autenticar(Autenticavel sujeito, String senha) throws AuthException {
+        if (!sujeito.validarAcesso(senha)) {
+            throw new AuthException("Login falhou");
         }
+        System.out.println("AuthService: Credenciais validadas com sucesso.");
     }
 }
