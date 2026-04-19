@@ -4,7 +4,7 @@ import java.time.LocalDateTime;
 
 public class UsuarioSistema implements Autenticavel, ValidadorDados {
     private String login;
-    private String senhaCadastrada = "admin123";
+    protected String senhaCadastrada = "admin123";
     private LocalDateTime dataCriacao = LocalDateTime.now();
 
     public UsuarioSistema(String login) {
