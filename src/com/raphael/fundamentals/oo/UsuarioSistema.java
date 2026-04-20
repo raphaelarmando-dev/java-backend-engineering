@@ -1,11 +1,8 @@
 package com.raphael.fundamentals.oo;
 
-import java.time.LocalDateTime;
-
-public class UsuarioSistema implements Autenticavel, ValidadorDados {
+public class UsuarioSistema extends EntidadeBase implements Autenticavel, ValidadorDados {
     private String login;
     protected String senhaCadastrada = "admin123";
-    private LocalDateTime dataCriacao = LocalDateTime.now();
 
     public UsuarioSistema(String login) {
         this.login = login;
@@ -13,10 +10,6 @@ public class UsuarioSistema implements Autenticavel, ValidadorDados {
 
     public String getLogin() {
         return this.login;
-    }
-
-    public LocalDateTime getDataCriacao() {
-        return this.dataCriacao;
     }
 
     @Override
