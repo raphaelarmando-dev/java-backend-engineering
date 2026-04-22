@@ -8,8 +8,7 @@ import java.util.List;
 public class UsuarioRepository extends RepositorioBase<UsuarioSistema>
         implements UsuarioDataHandler, CrudRepository<UsuarioSistema> {
 
-
-    private Notificador notificador = new EmailNotificador();
+    private Notificador notificador = NotificadorFactory.criar();
 
     @Override
     public void persistir(UsuarioSistema usuario) throws PersistenciaException {
