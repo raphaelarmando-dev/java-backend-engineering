@@ -5,7 +5,11 @@ import com.raphael.fundamentals.oo.*;
 public class MainServiceTest {
     public static void main(String[] args) {
         ConfiguracaoSistemaInfra config = ConfiguracaoSistemaInfra.getInstancia();
-        UsuarioService service = new UsuarioService();
+
+        UsuarioRepository repo = new UsuarioRepository();
+
+        UsuarioService service = new UsuarioService(repo);
+
         UsuarioAdmin novoAdmin = new UsuarioAdmin("Raphael_Senior");
 
         System.out.println("Iniciando Sistema v" + config.VERSAO);
