@@ -1,4 +1,4 @@
-package collections;
+package core1.collections;
 
 import java.util.*;
 
