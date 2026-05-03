@@ -23,4 +23,11 @@ public class CreditCard {
     public BigDecimal getAvailableLimit() {
         return limit.subtract(balance);
     }
+
+    public void deposit(BigDecimal amount) {
+        if (amount.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("O valor do depósito deve ser positivo");
+        }
+        this.balance = this.balance.add(amount);
+    }
 }
