@@ -3,7 +3,7 @@ package com.raphael.fundamentals.oo;
 import java.math.BigDecimal;
 
 
-public sealed interface Transactable permits CreditCard {
+public interface Transactable {
     void processPurchase(BigDecimal amount);
     void deposit(BigDecimal amount);
 }

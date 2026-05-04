@@ -30,4 +30,5 @@ public class CreditCard {
         }
         this.balance = this.balance.add(amount);
     }
+
 }
