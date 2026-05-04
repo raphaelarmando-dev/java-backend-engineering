@@ -7,4 +7,5 @@ public record TransactionEvent(String accountId, BigDecimal amount, LocalDateTim
     public TransactionEvent {
         if (timestamp == null) timestamp = LocalDateTime.now();
     }
+
 }
